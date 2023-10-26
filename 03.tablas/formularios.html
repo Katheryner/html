@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href=".">volver</a>
+    <h1>Formularios</h1>
+
+    <form action="">
+        <h2>Encuesta</h2>
+
+        <div>
+            <p>Nombre completo</p>
+            <input type="text" placeholder="ejm:Pablo" required/>
+        </div>
+        <div>
+            <p>Fecha de nacimiento</p>
+            <input type="date" required/>
+        </div>
+        <div>
+            <label for= "edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" required/>
+        </div>
+        <fieldset>
+            <legend>otra preguntas</legend>
+            <label for="">Estado Civil:</label>
+
+            <input type="radio" name="estado_civil" id="casado" value="casado" > 
+            <label for="casado">Casado</label>
+
+            <input type="radio" name="estado_civil" id="soltero" value="soltero">
+            <label for="soltero">Soltero</label>
+
+            <input type="radio" name="estado_civil" id="union libre" value="union libre"> 
+            <label for>Union libre</label>
+
+            <div>
+                <label for="color">color favorito</label>
+                <input type="color" name="color" id="color"/>
+            </div>
+            <br/>
+            <div>
+                <label for="email">Correo electronico</label>
+                <input placeholder="ejem@gmail.com"
+                type="email"
+                name="email"
+                id="email"
+                required/>
+
+                <label for="password">Contraseña</label>
+                <input type="password" required name="password" id="password" required/>
+            </div>
+            <br />
+            <div>
+                <label for="ciudad">Ciudad</label>
+                <select name="ciudad" id="ciudad" required>
+                <option value="med">Medellin</option>
+                <option value="buc">Bucaramanga</option>
+                <option value="">Cali</option>
+                <option value="">Pereira</option></select>
+            </div>
+            <div>
+                <p>Descripcion</p>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="descripcion" required></textarea>
+            </div>
+
+            <input type="url"/>
+            <input type="range"/>
+            <input type="file"/>
+            <input type="datetime-local"/>
+            <input type="hidden" value="20"/>
+            <br/>
+        
+            <input type="checkbox" id="terminos"/>
+            <label for="terminos">Aceptar terminos y condiciones</label>
+        </fieldset>
+        <button type="submit"estado_civil> 
+            Enviar
+        </button>
+    </form>
+
+</body>
+</html>

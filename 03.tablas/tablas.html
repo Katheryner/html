@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href=".">Volver</a>
+    
+    <h2>Estructuras basicas de una tabla</h2>
+
+    <table>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+        </tr>
+
+        <tr>
+            <td>product 1</td>
+            <td>product 2</td>
+            <td>product 3</td>
+            <td>product 4</td>
+            <td>product 5</td>
+        </tr>
+    </table>
+
+    <h2>Estructura de una tabla completa</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Genero</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cristian</td>
+                <td>19</td>
+                <td>Medellin</td>
+                <td>Masculino</td>
+            </tr>
+
+            <tr>
+                <td>Laura</td>
+                <td>24</td>
+                <td>Rionegro</td>
+                <td>Femenino</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">2</td>
+            </tr>
+        </tfoot>
+    </table>
+        
+        <h2>Tabla personalizada</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Especies</td>
+                    <th>#</th>
+                    <th>Imagen</th>
+                    <th>Nombre mascota</th>
+                    <th>Video</th>
+                </tr>
+              
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Perros</td>
+                    </tr>
+                <tr>
+                    
+                    <td>1</td>
+                    <td>
+                        <img src="img1.avif" alt="imagen de mascota" height="200">
+                    </td>
+                    <td colspan="2">Alicia</td>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="img1.avif" alt="imagen de mascota" height="200">
+                        </td>
+                        <td>Alicia</td>
+                        <td>
+                            <video src="video.mp4" controls height="200"></video>
+                        </td>
+                </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </thead>
+        </table>
+   
+</body>
+</html>
